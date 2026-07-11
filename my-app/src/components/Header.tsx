@@ -17,7 +17,7 @@ export default function Header(){
             </div>
             <div className="flex gap-4 ">
                 <BlackButton text="Entrar"/>
-                <GreenButton text="Crie sua conta"/>
+                <GreenButton text="Crie sua conta   "/>
             </div>
         </div>
     );
