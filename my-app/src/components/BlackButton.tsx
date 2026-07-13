@@ -4,8 +4,8 @@ interface BlackButtonProps {
 
 export default function BlackButton({text}: BlackButtonProps){
     return(
-        <button className="flex gap-1 bg-(--back-button) px-7 py-3 rounded-2xl hover:bg-(--black-button-hover) transition duration-300 ease-in-out cursor-pointer border border-(--black-button-hover)">
-            <div className="flex items-center text-white">
+        <button className="flex gap-1 bg-(--back-button) px-7 py-3 rounded-2xl hover:bg-(--black-button-hover) transition duration-300 ease-in-out cursor-pointer border border-(--black-button-hover) justify-center">
+            <div className="flex text-center items-center text-white">
                 <h3>{text}</h3>
             </div>
         </button>
