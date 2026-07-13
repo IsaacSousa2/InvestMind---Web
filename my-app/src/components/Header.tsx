@@ -20,28 +20,42 @@ export default function Header() {
       <div className="hidden md:flex">
         <HeaderLinks />
       </div>
-      
+
       <div className="hidden md:flex gap-4">
         <BlackButton text="Entrar" />
         <GreenButton text="Crie sua conta" />
       </div>
 
       <button
-        className="md:hidden"
+        className="md:hidden z-50 relative"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Abrir menu"
       >
         {menuOpen ? <X className="w-6 h-6 text-white" /> : <Menu className="w-6 h-6 text-white" />}
       </button>
 
-      {menuOpen && (
-        <div
-          className="fixed md:hidden right-4 top-16 bg-(--background) p-4 flex gap-4 z-10"
-          onClick={() => setMenuOpen(false)}
-        >
+      <div
+        className={`fixed inset-0 bg-black/50 transition-opacity duration-300 md:hidden ${
+          menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+        onClick={() => setMenuOpen(false)}
+      />
+
+      <div
+        className={`fixed top-0 right-0 h-full w-64 bg-(--background) p-6 pt-24 pb-10 flex flex-col md:hidden z-40 transition-transform duration-300 ease-in-out ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+
+        <div className="flex flex-col items-center justify-center flex-1 gap-6">
           <HeaderLinks />
         </div>
-      )}
+
+        <div className="flex flex-col gap-4">
+          <BlackButton text="Entrar" />
+          <GreenButton text="Começar" />
+        </div>
+      </div>
     </header>
   );
 }
