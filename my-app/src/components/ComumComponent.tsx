@@ -13,7 +13,7 @@ interface ComumComponentProps {
 
 export default function ComumComponent({ comment, tittle, subtittle, text, image }: ComumComponentProps) {
   return (
-    <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-10 md:px-24 py-24">
+    <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-10 px-6 md:px-24 py-24">
       <div className="flex flex-col gap-2 max-w-125">
         <h4 className="text-(--green-t) uppercase font-semibold text-[clamp(13px,1vw+10px,16px)]">{comment}</h4>
         <h1 className="font-bold text-(--tittle) text-[clamp(25px,1.8vw+18px,33px)]">{tittle}</h1>

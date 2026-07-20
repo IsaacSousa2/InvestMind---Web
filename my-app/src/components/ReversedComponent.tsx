@@ -13,7 +13,7 @@ interface ComumComponentProps {
 
 export default function ReversedComponent({ comment, tittle, subtittle, text, image }: ComumComponentProps) {
   return (
-    <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-10 md:px-24 py-24">
+    <div className="bg-(--section) px-6 flex flex-col md:flex-row justify-center md:justify-between items-center gap-10 md:px-24 py-24">
       <div className="w-full max-w-125 md:max-w-180">
         <Image
           src={image.src}
