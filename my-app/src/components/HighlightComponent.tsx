@@ -3,7 +3,7 @@ import { BrainCircuit, TrendingUp, ShieldCheck, Wallet, BellRing, ChartCandlesti
 
 export default function HighlightComponent(){
     return(
-        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-6 gap-x-8 gap-y-12 px-3 justify-items-center items-center bg-(--section) py-24">
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-6 gap-x-8 gap-y-12 px-3 items-center bg-(--section) py-24">
             <Highlights 
                 tittle="IA Financeira"
                 text="Receba recomendações inteligentes e personalizadas para investir com mais confiança."
