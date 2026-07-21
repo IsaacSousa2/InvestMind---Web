@@ -4,6 +4,7 @@ import Problem from "@/components/ComumComponent";
 import AiTalk from "@/components/ReversedComponent";
 import HowItWorks from "@/components/ComumComponent";
 import Dashboard from "@/components/ReversedComponent";
+import TargetSimulator from "@/components/ComumComponent";
 
 export default function Home() {
   return (
@@ -49,6 +50,16 @@ export default function Home() {
         tittle="Seu dashboard completo"
         subtittle="Acompanhe tudo em um só lugar de forma simples e intuitiva."
         text=""
+      />
+      <TargetSimulator 
+        comment="Simulador"
+        tittle="Descubra o futuro do seu"
+        subtittle="Simule gratuitamente e veja como pequenas escolhas hoje podem transformar o seus sonhos em realidade."
+        text=""
+        image={{
+          src: "/simulator-graph.svg",
+          alt: "Simulador de objetivo"
+        }}
       />
     </div>
 
