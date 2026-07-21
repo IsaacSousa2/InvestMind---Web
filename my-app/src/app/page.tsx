@@ -5,6 +5,7 @@ import AiTalk from "@/components/ReversedComponent";
 import HowItWorks from "@/components/ComumComponent";
 import Dashboard from "@/components/ReversedComponent";
 import TargetSimulator from "@/components/ComumComponent";
+import Highlights from "@/components/HighlightComponent"
 import InvestMindAudience from "@/components/InvestMindAudience";
 import Footer from "@/components/Footer";
 
@@ -64,6 +65,7 @@ export default function Home() {
         }}
         buttonText="Faça a sua simulação agora"
       />
+      <Highlights />
       <InvestMindAudience />
       <Footer />
     </div>

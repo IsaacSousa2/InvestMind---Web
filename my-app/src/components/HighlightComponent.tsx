@@ -36,4 +36,8 @@ export default function HighlightComponent(){
             />
         </div>
     )
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> c92a2a38c933b47543067cca60c34f22c0f6ff25
