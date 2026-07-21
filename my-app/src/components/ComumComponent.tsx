@@ -5,7 +5,7 @@ interface ComumComponentProps {
   tittle: string;
   subtittle: string;
   text: string;
-  buttonText: string;
+  buttonText?: string;
   image: {
     src: string;
     alt: string;
@@ -20,11 +20,13 @@ export default function ComumComponent({ comment, tittle, subtittle, text, image
         <h1 className="font-bold text-(--tittle) text-[clamp(25px,1.8vw+18px,33px)]">{tittle}</h1>
         <h2 className="text-(--texts) text-[clamp(14px,0.8vw+12px,18px)]">{subtittle}</h2>
         <h3 className="text-(--tittle) text-[clamp(15px,0.9vw+12px,19px)]">{text}</h3>
-        <button className="flex gap-1 items-center justify-center text-center bg-(--green-t) px-3 py-6 rounded-2xl hover:bg-(--green-d) transition duration-300 ease-in-out cursor-pointer">
+        {buttonText && (
+          <button className="flex gap-1 items-center justify-center text-center bg-(--green-t) px-3 py-6 rounded-2xl hover:bg-(--green-d) transition duration-300 ease-in-out cursor-pointer">
             <div className="font-medium text-white text-xl flex items-center justify-center">
-                <h1>{buttonText}</h1>
+              <h1>{buttonText}</h1>
             </div>
-        </button>
+          </button>
+        )}
       </div>
 
       <div className="w-full max-w-125 md:max-w-180">

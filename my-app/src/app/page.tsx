@@ -20,7 +20,6 @@ export default function Home() {
           src: "/box-differentials.svg",
           alt: "Diferenciais fluxo"
         }}
-        buttonText=""
       />
       <AiTalk 
         image={{
@@ -41,7 +40,6 @@ export default function Home() {
           src: "/graphs-objectives.svg",
           alt: "Diferenciais fluxo"
         }}
-        buttonText=""
       />
       <Dashboard 
         image={{
