@@ -5,6 +5,7 @@ import AiTalk from "@/components/ReversedComponent";
 import HowItWorks from "@/components/ComumComponent";
 import Dashboard from "@/components/ReversedComponent";
 import TargetSimulator from "@/components/ComumComponent";
+import Highlights from "@/components/HighlightComponent"
 
 export default function Home() {
   return (
@@ -62,6 +63,7 @@ export default function Home() {
         }}
         buttonText="Faça a sua simulação agora"
       />
+      <Highlights />
     </div>
 
   );

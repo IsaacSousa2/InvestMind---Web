@@ -1,30 +1,22 @@
+import { LucideIcon } from "lucide-react";
 import Image from "next/image";
 
 interface HighlightsProps {
     tittle: string;
     text: string;
-    image: {
-        src: string;
-        alt: string;
-    }
+    icon: LucideIcon;
 }
 
-export default function Highlights({ tittle, text, image }: HighlightsProps){
+export default function Highlights({ tittle, text, icon: Icon }: HighlightsProps){
     return(
-        <div>
+        <div className="flex flex-col md:flex-row">
             <div>
-                <Image
-                src={image.src}
-                alt={image.alt}
-                width={200}
-                height={200}
-                className="w-full h-auto"
-                />
+                <Icon className="w-8 h-8 text-white"/>
             </div>
             <div>
                 <h1>{tittle}</h1>
                 <h3>{text}</h3>
             </div>
         </div>
-    );
+    )
 }
